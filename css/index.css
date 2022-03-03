@@ -33,7 +33,7 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: right no-repeat
+  background: center no-repeat
     url('https://cdn.jsdelivr.net/gh/tlyboy/assets/img/bg/35.jpg');
   background-size: cover;
 }
