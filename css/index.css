@@ -5,12 +5,12 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: rgb(44, 62, 80);
 }
 
@@ -41,10 +41,8 @@ header {
   position: fixed;
   width: 100%;
   height: 60px;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   z-index: 999;
+  transition: backdrop-filter 1s;
 }
 
 header .container {

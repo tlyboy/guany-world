@@ -1,20 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let start = document.querySelector('.start')
-  let messages = document.querySelectorAll('.message')
+  const header = document.querySelector('header')
+  const start = document.querySelector('.start')
+  const messages = document.querySelectorAll('.message')
 
   window.addEventListener('scroll', () => {
+    if (window.scrollY > header.offsetHeight) {
+      header.style.backdropFilter = 'blur(10px)'
+      header.style.webkitBackdropFilter = 'blur(10px)'
+    } else {
+      header.style.backdropFilter = 'none'
+      header.style.webkitBackdropFilter = 'none'
+    }
+
     for (let i = 0; i < messages.length; i++) {
-      let img = messages[i].querySelector('img')
-      if (window.pageYOffset >= img.offsetTop - start.offsetHeight) {
-        img.className = 'layui-anim layui-anim-scale'
+      const img = messages[i].querySelector('img')
+      if (window.scrollY > img.offsetTop - start.offsetHeight) {
+        img.classList.add('layui-anim', 'layui-anim-scale')
       } else {
-        img.className = ''
+        img.classList.remove('layui-anim', 'layui-anim-scale')
       }
     }
   })
 
-  let joinGame = document.querySelector("a[href='#download']")
-  let download = document.querySelector('#download')
+  const joinGame = document.querySelector("a[href='#download']")
+  const download = document.querySelector('#download')
 
   joinGame.addEventListener('click', e => {
     if (window.scrollTo) {
