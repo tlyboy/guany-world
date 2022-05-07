@@ -45,7 +45,7 @@ header {
   transition: backdrop-filter 1s;
 }
 
-header .container {
+header section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,32 +54,33 @@ header .container {
   height: 100%;
 }
 
-header .container h1 {
+header section h1 {
   margin-left: 10px;
-  font-size: 20px;
 }
 
-header .container h1 .logo {
+header section h1 .logo {
   display: flex;
   align-items: center;
   color: #ecf0f1;
+  font-size: 0;
 }
 
-header .container h1 .logo::before {
+header section h1 .logo::before {
   content: '';
   width: 40px;
   height: 40px;
-  background: no-repeat url('../favicon.png');
+  background: no-repeat url('../logo.png');
   background-size: cover;
 }
 
-header .container h1 .logo::after {
-  content: 'Guany MCServer';
+header section h1 .logo::after {
+  content: 'Guany 的世界';
   margin-left: 10px;
+  font-size: 20px;
   text-shadow: 0 3px 1px rgba(44, 62, 80, 0.1);
 }
 
-header .container .github {
+header section .github {
   margin-right: 10px;
   font-size: 30px;
   color: #e74c3c;
@@ -95,15 +96,15 @@ footer {
   height: 100vh;
 }
 
-section .start p {
+main .start h2 {
   margin: 100px 0;
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   color: #ecf0f1;
   text-shadow: 0 3px 1px rgba(44, 62, 80, 0.1);
 }
 
-section .start a {
+main .start a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,26 +114,26 @@ section .start a {
   border-radius: 30px;
   font-size: 20px;
   color: #ecf0f1;
-  box-shadow: 0 0 10px 1px rgbargba(44, 62, 80, 0.3);
+  box-shadow: 0 0 10px 1px rgba(44, 62, 80, 0.3);
   text-shadow: 0 3px 1px rgba(44, 62, 80, 0.1);
   transition: all 0.3s;
 }
 
-section .start a:hover {
+main .start a:hover {
   background-color: rgba(236, 240, 241, 0.8);
   color: #2c3e50;
 }
 
-section .message p {
+main .message p {
   margin: 60px 0;
   color: #ecf0f1;
-  font-size: 24px;
+  font-size: 20px;
   text-shadow: 0 3px 1px rgba(44, 62, 80, 0.1);
 }
 
-section .message img {
+main .message img {
   margin-bottom: 60px;
-  width: 70%;
+  width: 60%;
   border-radius: 1em;
 }
 

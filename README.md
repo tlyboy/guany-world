@@ -1,3 +1,3 @@
-# Guany 的我的世界服务器
+# Guany 的世界
 
 ![bg.jpg](./img/bg.jpg)
