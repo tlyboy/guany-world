@@ -1,3 +1,3 @@
 # Guany 的世界
 
-![bg.jpg](./img/bg.jpg)
+![bg](https://raw.githubusercontent.com/tlyboy/guany-world/main/img/bg.jpg)
