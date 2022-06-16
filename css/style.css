@@ -41,8 +41,12 @@ header section h1 .logo::after {
 
 header section .github {
   margin-right: 10px;
-  font-size: 30px;
-  color: #e74c3c;
+}
+
+header section .github svg {
+  width: 30px;
+  height: 30px;
+  fill: #ecf0f1;
 }
 
 .start,
