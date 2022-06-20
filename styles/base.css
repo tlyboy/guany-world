@@ -20,7 +20,8 @@
 }
 
 body {
-  font-family: 'Noto Sans SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Han Sans SC VF', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
