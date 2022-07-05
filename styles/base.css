@@ -16,14 +16,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Source Han Sans SC VF', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-touch-callout: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  font-family: 'Source Han Sans SC VF', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::before {
