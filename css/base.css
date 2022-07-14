@@ -1,3 +1,10 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -10,13 +17,6 @@
 
 ::-webkit-scrollbar-track {
   background: rgba(44, 62, 80, 0.5);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
 }
 
 body {
